@@ -24,14 +24,14 @@ export default async function PersonajePage(req: PageProps) {
                 {character ? (
                     <div class="personaje-card">
                         <h2 class="personaje-name">{character.name}</h2>
-                        <p class="personaje-info">🌍 Altura: {character.height} cm</p>
-                        <p class="personaje-info">⚖️ Peso: {character.mass} kg</p>
-                        <p class="personaje-info">💇‍♂️ Color de cabello: {character.hair_color}</p>
-                        <p class="personaje-info">🎨 Color de piel: {character.skin_color}</p>
-                        <p class="personaje-info">🚻 Género: {character.gender}</p>
-                        <p class="personaje-info">🎂 Año de nacimiento: {character.birth_year}</p>
+                        <p class="personaje-info">Altura: {character.height} cm</p>
+                        <p class="personaje-info"> Peso: {character.mass} kg</p>
+                        <p class="personaje-info">Color de cabello: {character.hair_color}</p>
+                        <p class="personaje-info">Color de piel: {character.skin_color}</p>
+                        <p class="personaje-info">Género: {character.gender}</p>
+                        <p class="personaje-info">Año de nacimiento: {character.birth_year}</p>
 
-                        <h3>🎬 Películas:</h3>
+                        <h3>Películas:</h3>
                         <ul class="films-list">
                             {character.films.map((film: string, index: number) => (
                                 <li key={index}>
@@ -40,7 +40,7 @@ export default async function PersonajePage(req: PageProps) {
                             ))}
                         </ul>
 
-                        <h3>🦸‍♂️ Especies:</h3>
+                        <h3>Especies:</h3>
                         <ul class="films-list">
                             {character.species.map((species: string, index: number) => (
                                 <li key={index}>
@@ -49,7 +49,7 @@ export default async function PersonajePage(req: PageProps) {
                             ))}
                         </ul>
 
-                        <h3>🚗 Vehículos:</h3>
+                        <h3>Vehículos:</h3>
                         <ul class="films-list">
                             {character.vehicles.map((vehicle: string, index: number) => (
                                 <li key={index}>
@@ -58,7 +58,7 @@ export default async function PersonajePage(req: PageProps) {
                             ))}
                         </ul>
 
-                        <h3>🚀 Naves Estelares:</h3>
+                        <h3>Naves Estelares:</h3>
                         <ul class="films-list">
                             {character.starships.map((starship: string, index: number) => (
                                 <li key={index}>
